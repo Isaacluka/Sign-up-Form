@@ -29,7 +29,7 @@ body{
 }*/
 .side-div{
     flex-basis: 30%;
-    background-image: url("Sign-up-Form/Assets/bg_image.jpg");
+    background-image: url("/Sign-up-Form/Assets/bg_image.jpg");
     background-size: cover;
     color: white;
 }
