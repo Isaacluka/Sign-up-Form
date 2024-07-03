@@ -1,0 +1,185 @@
+@import url('https://fonts.cdnfonts.com/css/norse');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+    font-family: 'Helvetica', sans-serif;    
+}                                            
+
+body{
+    display: flex;
+    flex-direction: row;
+    width: 100%;  
+    height: 100vh;
+}
+/*body > div{
+    border: 1rem solid red;
+}*/
+.side-div{
+    flex-basis: 30%;
+    background-image: url("/Assets/image2.jpg");
+    background-size: cover;
+    color: white;
+}
+.side-div p{
+    position: relative;
+    top: 540px;
+    left: 100px;
+    align-self: center;
+    font-size: 1.5rem;
+    color: white;
+}
+.side-div a{
+    color: white;
+    text-decoration: underline;
+}
+.logo-div{
+    background: rgba(0, 0, 0, 50%);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+    position: relative;
+    top: 150px;
+    font-size: 4rem;
+    font-family: 'Norse', sans-serif;
+}
+.logo-div a img{
+    width: auto;
+    height: 10rem;
+}
+.main-div{
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+    background: #f9fafb;
+    height: 100vh;
+    
+}
+
+/*  Copy Div  */
+.copy_div{
+    flex-basis: 30%;
+    padding: 10rem 0rem 4rem 5rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.copy_div p{
+    max-width: 60ch;
+}
+.copy_div span{
+    font-style: italic;
+}
+
+
+
+/*  Form Section  */
+
+.form_div{
+    flex-basis: 70%;
+}
+
+.form_div h1{
+    font-size: 2rem;
+    background: white;
+    padding: 2rem 0rem 1.6rem 5rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background: white;
+}
+
+form fieldset{
+    display: flex;
+    flex-direction: row;
+    align-items: self-start;
+    justify-content: left;
+    padding-bottom: 2rem;
+    gap: 6.4rem;
+    font-size: 1.6rem;  
+    width: 100%;
+}
+form fieldset div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: flex-start;
+    padding-left: 5rem;
+}
+
+form fieldset .submit-div button, p{
+    margin-top: 2rem;
+    padding-top: 1rem;
+}
+
+input {
+  /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1.2rem sans-serif;
+    /* Uniform text field size */
+    width: 300px;
+    /* Match form field borders */
+    box-sizing: border-box;
+    border: 1px solid #E5E7EB;
+    border-radius: .5rem;
+    padding: 1rem;
+ }
+  
+input:focus {
+    /* Additional highlight for focused elements */
+    border-color: blue;
+    box-shadow: 2px 1px#999;
+}
+
+label{
+    font-size: 1rem;
+    
+}
+.password:invalid{
+    border-color: red;
+}
+.button{
+    color: white;
+    background: #596D48;
+    margin-top: rem;
+    padding: 1.2rem 6rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border: .2rem solid #596D48;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    align-self: flex-start;
+}
+.submit-div span{
+    color: #596D48;
+    font-weight: bold;
+}
+fieldset:last-child{
+    background: #f9fafb;
+    width: 100%;
+    padding-top: 1rem;
+    box-shadow: 0px 8px 6px #dbdcdd inset;
+}
+fieldset:nth-last-child(2){
+    padding-bottom: 3rem;
+    
+}
